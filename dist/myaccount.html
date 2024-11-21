@@ -7,7 +7,7 @@
     <script type="module" crossorigin src="./assets/script-D_e_IqbN.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/script-ZbMbCF_k.css">
   </head>
-  <body class="bg-gray-100 text-gray-900">
+  <body class="bg-gray-100 text-gray-900 min-h-screen flex flex-col">
 
     <header class="sticky top-0 bg-white border-b shadow-md">
       <div
@@ -66,67 +66,72 @@
       </div>
     </header>
 
-    <main class="container mx-auto mt-8 px-6">
-      <section class="container mx-auto px-4 md:px-8 lg:px-16 py-8 space-y-12">
-        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-          <div
-            class="bg-gray-200 max-sm:object-contain flex aspect-[4/3] items-center justify-center rounded"
-          ></div>
+    <main
+      class="container mx-auto px-6 mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 flex-grow"
+    >
+      <!-- Profile Section -->
+      <section class="bg-white p-6 rounded-lg shadow-md">
+        <div class="flex flex-col items-center mb-6">
+          <div class="w-16 h-16 bg-gray-300 rounded-full mb-4"></div>
           <div>
-            <h2 class="text-lg md:text-xl font-bold mb-4">
-              Our Blockbuster Story
-            </h2>
-            <p class="text-gray-700 text-xs sm:text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis
-              efficitur enim. Aenean lacinia risus scelerisque eros convallis
-              euismod. Suspendisse vitae scelerisque ipsum. Aliquam pulvinar,
-              nunc a auctor sagittis, lorem sem semper orci, sodales pulvinar
-              libero massa vel enim. Proin rutrum lectus eget rhoncus tempus.
-              Fusce sed urna vel felis tempor porttitor. Donec ac dignissim
-              lectus. Donec feugiat fermentum erat sit amet efficitur. Etiam
-              venenatis sapien vitae velit auctor gravida. Nunc nec condimentum
-              elit. Interdum et malesuada fames ac ante ipsum primis in
-              faucibus. Ut vel quam felis. Quisque ac felis metus. Phasellus ac
-              massa ut lorem tincidunt mattis vel tincidunt justo. Proin tempus,
-              eros at pharetra cursus, justo massa tincidunt diam, sit amet
-              malesuada velit eros at sem. Praesent non ipsum tortor. Curabitur
-              quis augue et libero volutpat vehicula vel in ex. Mauris sed
-              lectus at nulla finibus aliquam. Integer nisl quam, pretium
-              aliquam ex id, cursus suscipit magna. Sed malesuada neque
-              dignissim, hendrerit turpis blandit, commodo augue.
+            <p class="text-gray-600 text-sm font-semibold">Email:</p>
+            <p class="text-gray-900 font-medium mb-4">user@example.com</p>
+            <p class="text-gray-600 text-sm font-semibold">
+              Subscription Plan:
             </p>
+            <a href="./subscription.html" class="text-blue-600 underline">
+              Free Plan
+            </a>
           </div>
         </div>
+        <div class="border rounded-md divide-y">
+          <button class="w-full px-4 py-2 text-left hover:bg-gray-100">
+            Billing Information
+          </button>
+          <button class="w-full px-4 py-2 text-left hover:bg-gray-100">
+            Parental Controls
+          </button>
+          <button class="w-full px-4 py-2 text-left hover:bg-gray-100">
+            Account Settings
+          </button>
+        </div>
+      </section>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-          <div
-            class="bg-gray-200 max-sm:object-contain flex aspect-[4/3] items-center justify-center rounded order-first md:order-last"
-          ></div>
-          <div>
-            <h2 class="text-lg md:text-xl font-bold mb-4">What now?</h2>
-            <p class="text-gray-700 text-xs sm:text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis
-              efficitur enim. Aenean lacinia risus scelerisque eros convallis
-              euismod. Suspendisse vitae scelerisque ipsum. Aliquam pulvinar,
-              nunc a auctor sagittis, lorem sem semper orci, sodales pulvinar
-              libero massa vel enim. Proin rutrum lectus eget rhoncus tempus.
-              Fusce sed urna vel felis tempor porttitor. Donec ac dignissim
-              lectus. Donec feugiat fermentum erat sit amet efficitur. Etiam
-              venenatis sapien vitae velit auctor gravida. Nunc nec condimentum
-              elit. Interdum et malesuada fames ac ante ipsum primis in
-              faucibus. Ut vel quam felis. Quisque ac felis metus. Phasellus ac
-              massa ut lorem tincidunt mattis vel tincidunt justo. Proin tempus,
-              eros at pharetra cursus, justo massa tincidunt diam, sit amet
-              malesuada velit eros at sem. Praesent non ipsum tortor. Curabitur
-              quis augue et libero volutpat vehicula vel in ex. Mauris sed
-              lectus at nulla finibus aliquam. Integer nisl quam, pretium
-              aliquam ex id, cursus suscipit magna. Sed malesuada neque
-              dignissim, hendrerit turpis blandit, commodo augue.
-            </p>
-          </div>
+      <!-- Modal Display Section -->
+      <section
+        class="bg-white p-6 rounded-lg shadow-md flex items-center justify-center"
+      >
+        <p class="text-gray-500 italic">Select an option to view details.</p>
+      </section>
+
+      <!-- News and Updates Section -->
+      <section class="bg-white p-6 rounded-lg shadow-md">
+        <h2 class="text-lg font-semibold mb-4">Blockbuster News and Updates</h2>
+        <div class="flex items-center justify-center h-full">
+          <p class="text-gray-500">There are no news or updates yet.</p>
         </div>
       </section>
     </main>
+
+    <script>
+      // Add interactivity for modal display
+      const buttons = document.querySelectorAll("button");
+      const modalSection = document.querySelector(
+        "main > section:nth-child(2)"
+      );
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          const option = button.textContent;
+          modalSection.innerHTML = `
+              <div class="text-center">
+                <h2 class="text-xl font-semibold mb-4">${option}</h2>
+                <p class="text-gray-600">Details about ${option} will go here.</p>
+              </div>
+            `;
+        });
+      });
+    </script>
 
     <footer class="bottom-0 mt-4 bg-gray-800 text-gray-300 text-sm py-4">
       <div class="container mx-auto flex justify-between">

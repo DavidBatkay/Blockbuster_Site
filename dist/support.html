@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blockbuster</title>
+    <script type="module" crossorigin src="./assets/script-D_e_IqbN.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/script-ZbMbCF_k.css">
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+
+    <header class="sticky top-0 bg-white border-b shadow-md">
+      <div
+        class="container mx-auto flex items-center justify-between py-4 px-6"
+      >
+        <a href="./index.html" class="flex items-center mr-4 -ml-4">
+          <img
+            src="./logo.png"
+            alt="Blockbuster Logo"
+            class="h-14 w-auto object-contain"
+          />
+          <h1 class="text-xl font-semibold hidden lg:block">𝘽𝙡𝙤𝙘𝙠𝘽𝙪𝙨𝙩𝙚𝙧</h1></a
+        >
+        <nav class="flex xl:space-x-6 md:space-x-3 sm:space-x-0">
+          <a
+            href="./browse.html"
+            class="text-blue-950 text-xs border-transparent border-[3px] hover:border-yellow-300 hover:text-yellow-300 font-bold p-1 rounded-md hover:bg-gradient-to-t from-blue-700 to-blue-400 xl:text-lg md:text-sm"
+            >𝘽𝙍𝙊𝙒𝙎𝙀</a
+          >
+          <a
+            href="./subscription.html"
+            class="text-blue-950 text-xs border-transparent border-[3px] hover:border-yellow-300 hover:text-yellow-300 font-bold p-1 rounded-md hover:bg-gradient-to-t from-blue-700 to-blue-400 xl:text-lg md:text-sm"
+            >𝙎𝙐𝘽𝙎𝘾𝙍𝙄𝙋𝙏𝙄𝙊𝙉</a
+          >
+          <a
+            href="./nostalgiahub.html"
+            class="text-blue-950 text-xs border-transparent border-[3px] hover:border-yellow-300 hover:text-yellow-300 font-bold p-1 rounded-md hover:bg-gradient-to-t from-blue-700 to-blue-400 xl:text-lg md:text-sm"
+          >
+            <span class="hidden sm:block">𝙉𝙊𝙎𝙏𝘼𝙇𝙂𝙄𝘼 𝙃𝙐𝘽</span>
+            <span class="block sm:hidden">𝙃𝙐𝘽</span></a
+          >
+          <a
+            href="./support.html"
+            class="text-blue-950 text-xs border-transparent border-[3px] hover:border-yellow-300 hover:text-yellow-300 font-bold p-1 rounded-md hover:bg-gradient-to-t from-blue-700 to-blue-400 xl:text-lg md:text-sm"
+          >
+            <span class="hidden sm:block">𝙁𝘼𝙌 & 𝙎𝙐𝙋𝙋𝙊𝙍𝙏</span>
+            <span class="block sm:hidden">𝙁𝘼𝙌</span>
+          </a>
+        </nav>
+        <div
+          class="md:flex ml-4 -mr-4 items-center sm:grid sm:grid-cols-1 xl:space-x-4 md:space-x-2 sm:space-x-0"
+        >
+          <a href="./login.html">
+            <button class="text-sm text-blue-600 hover:underline">
+              Log In
+            </button></a
+          >
+          <a href="./signup.html">
+            <button
+              class="xl:px-4 xl:py-2 sm:p-0 bg-gradient-to-t xl:font-bold from-blue-700 to-blue-400 text-yellow-300 text-sm rounded hover:bg-blue-700"
+            >
+              Sign Up
+            </button></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto mt-8 px-6">
+      <section class="container mx-auto px-6 my-8">
+        <!-- FAQ Section -->
+        <div class="mb-12">
+          <h1 class="text-4xl font-bold text-gray-800 text-center mb-8">FAQ</h1>
+          <div class="space-y-4 border-b pb-6">
+            <!-- FAQ Item 1 -->
+            <div
+              class="border-gray-300 rounded-md border-2 hover:border-yellow-300"
+            >
+              <button
+                class="w-full text-left px-4 py-3 font-semibold text-gray-800 hover:bg-gradient-to-t from-blue-700 to-blue-400 rounded-md flex justify-between items-center"
+                onclick="toggleFAQ(1)"
+              >
+                <span>What is Blockbuster?</span>
+              </button>
+              <div
+                id="faq-content-1"
+                class="hidden px-4 py-3 bg-white border-t border-gray-300"
+              >
+                Blockbuster is a streaming service offering movies, TV shows,
+                and nostalgia-driven content.
+              </div>
+            </div>
+
+            <!-- FAQ Item 2 -->
+            <div
+              class="border-gray-300 rounded-md border-2 hover:border-yellow-300"
+            >
+              <button
+                class="w-full text-left px-4 py-3 font-semibold text-gray-800 hover:bg-gradient-to-t from-blue-700 to-blue-400 rounded-md flex justify-between items-center"
+                onclick="toggleFAQ(2)"
+              >
+                <span>How can I subscribe?</span>
+              </button>
+              <div
+                id="faq-content-2"
+                class="hidden px-4 py-3 bg-white border-t border-gray-300"
+              >
+                You can subscribe through our Subscription Plans page, which
+                offers Free, Standard, and Superstar options.
+              </div>
+            </div>
+
+            <!-- FAQ Item 3 -->
+            <div
+              class="border-2 hover:border-yellow-300 border-gray-300 rounded-md"
+            >
+              <button
+                class="w-full text-left px-4 py-3 font-semibold text-gray-800 hover:bg-gradient-to-t from-blue-700 to-blue-400 rounded-md flex justify-between items-center"
+                onclick="toggleFAQ(3)"
+              >
+                <span>Can I cancel my subscription anytime?</span>
+              </button>
+              <div
+                id="faq-content-3"
+                class="hidden px-4 py-3 bg-white border-t border-gray-300"
+              >
+                Yes, you can cancel your subscription anytime from your account
+                settings.
+              </div>
+            </div>
+
+            <!-- FAQ Item 4 -->
+            <div
+              class="border-2 hover:border-yellow-300 border-gray-300 rounded-md"
+            >
+              <button
+                class="w-full text-left px-4 py-3 font-semibold text-gray-800 hover:bg-gradient-to-t from-blue-700 to-blue-400 rounded-md flex justify-between items-center"
+                onclick="toggleFAQ(4)"
+              >
+                <span>Are there any additional fees?</span>
+              </button>
+              <div
+                id="faq-content-4"
+                class="hidden px-4 py-3 bg-white border-t border-gray-300"
+              >
+                There are no hidden fees. However, rentals for Free Plan users
+                may incur charges.
+              </div>
+            </div>
+
+            <!-- FAQ Item 5 -->
+            <div
+              class="border-2 hover:border-yellow-300 border-gray-300 rounded-md"
+            >
+              <button
+                class="w-full text-left px-4 py-3 font-semibold text-gray-800 hover:bg-gradient-to-t from-blue-700 to-blue-400 rounded-md flex justify-between items-center"
+                onclick="toggleFAQ(5)"
+              >
+                <span>What devices are supported?</span>
+              </button>
+              <div
+                id="faq-content-5"
+                class="hidden px-4 py-3 bg-white border-t border-gray-300"
+              >
+                Blockbuster is available on desktop, tablet and mobile.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div>
+          <h2 class="text-2xl font-bold text-gray-800 mb-4">
+            Still having questions? Contact us!
+          </h2>
+          <form action="#" method="POST" class="space-y-4">
+            <!-- Name Inputs -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <input
+                type="text"
+                name="first-name"
+                placeholder="First Name"
+                required
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+              />
+              <input
+                type="text"
+                name="last-name"
+                placeholder="Last Name"
+                required
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+              />
+            </div>
+
+            <!-- Email Input -->
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              required
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+            />
+
+            <!-- Issue Category -->
+            <select
+              name="issue-category"
+              required
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+            >
+              <option value="" disabled selected>Select Issue Category</option>
+              <option value="subscription">Subscription</option>
+              <option value="technical">Technical Support</option>
+              <option value="billing">Billing</option>
+              <option value="content">Content Availability</option>
+              <option value="other">Other</option>
+            </select>
+
+            <!-- Issue Description -->
+            <textarea
+              name="issue-description"
+              placeholder="Describe your issue..."
+              rows="4"
+              required
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500"
+            ></textarea>
+
+            <!-- Submit Button -->
+            <button
+              type="submit"
+              class="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script>
+      function toggleFAQ(id) {
+        const content = document.getElementById(`faq-content-${id}`);
+        if (content.classList.contains("hidden")) {
+          content.classList.remove("hidden");
+        } else {
+          content.classList.add("hidden");
+        }
+      }
+    </script>
+
+    <footer class="bottom-0 mt-4 bg-gray-800 text-gray-300 text-sm py-4">
+      <div class="container mx-auto flex justify-between">
+        <a href="/about.html" class="mx-2 text-xs md:text-sm">About us</a>
+        <p class="mx-2 text-xs md:text-sm">
+          Copyright Blockbuster 2024. All Rights Reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blockbuster</title>
+    <script type="module" crossorigin src="./assets/script-D_e_IqbN.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/script-ZbMbCF_k.css">
+  </head>
+  <body class="bg-gray-100 text-gray-900 min-h-screen flex flex-col">
+
+    <header class="sticky top-0 bg-white border-b shadow-md">
+      <div
+        class="container mx-auto flex items-center justify-between py-4 px-6"
+      >
+        <a href="./index.html" class="flex items-center mr-4 -ml-4">
+          <img
+            src="./logo.png"
+            alt="Blockbuster Logo"
+            class="h-14 w-auto object-contain"
+          />
+          <h1 class="text-xl font-semibold hidden lg:block">𝘽𝙡𝙤𝙘𝙠𝘽𝙪𝙨𝙩𝙚𝙧</h1></a
+        >
+        <nav class="flex xl:space-x-6 md:space-x-3 sm:space-x-0">
+          <a
+            href="./browse.html"
+            class="text-blue-950 text-xs border-transparent border-[3px] hover:border-yellow-300 hover:text-yellow-300 font-bold p-1 rounded-md hover:bg-gradient-to-t from-blue-700 to-blue-400 xl:text-lg md:text-sm"
+            >𝘽𝙍𝙊𝙒𝙎𝙀</a
+          >
+          <a
+            href="./subscription.html"
+            class="text-blue-950 text-xs border-transparent border-[3px] hover:border-yellow-300 hover:text-yellow-300 font-bold p-1 rounded-md hover:bg-gradient-to-t from-blue-700 to-blue-400 xl:text-lg md:text-sm"
+            >𝙎𝙐𝘽𝙎𝘾𝙍𝙄𝙋𝙏𝙄𝙊𝙉</a
+          >
+          <a
+            href="./nostalgiahub.html"
+            class="text-blue-950 text-xs border-transparent border-[3px] hover:border-yellow-300 hover:text-yellow-300 font-bold p-1 rounded-md hover:bg-gradient-to-t from-blue-700 to-blue-400 xl:text-lg md:text-sm"
+          >
+            <span class="hidden sm:block">𝙉𝙊𝙎𝙏𝘼𝙇𝙂𝙄𝘼 𝙃𝙐𝘽</span>
+            <span class="block sm:hidden">𝙃𝙐𝘽</span></a
+          >
+          <a
+            href="./support.html"
+            class="text-blue-950 text-xs border-transparent border-[3px] hover:border-yellow-300 hover:text-yellow-300 font-bold p-1 rounded-md hover:bg-gradient-to-t from-blue-700 to-blue-400 xl:text-lg md:text-sm"
+          >
+            <span class="hidden sm:block">𝙁𝘼𝙌 & 𝙎𝙐𝙋𝙋𝙊𝙍𝙏</span>
+            <span class="block sm:hidden">𝙁𝘼𝙌</span>
+          </a>
+        </nav>
+        <div
+          class="md:flex ml-4 -mr-4 items-center sm:grid sm:grid-cols-1 xl:space-x-4 md:space-x-2 sm:space-x-0"
+        >
+          <a href="./login.html">
+            <button class="text-sm text-blue-600 hover:underline">
+              Log In
+            </button></a
+          >
+          <a href="./signup.html">
+            <button
+              class="xl:px-4 xl:py-2 sm:p-0 bg-gradient-to-t xl:font-bold from-blue-700 to-blue-400 text-yellow-300 text-sm rounded hover:bg-blue-700"
+            >
+              Sign Up
+            </button></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="container mx-auto flex-grow mt-6 px-6">
+      <section class="bg-gray-300 w-full h-auto rounded-md mb-8 s">
+        <div class="relative w-full h-32 md:h-64 bg-gray-500 rounded-md">
+          <!-- Movie Thumbnail (Overlayed) -->
+          <div
+            class="absolute bottom-0 left-4 h-20 w-16 md:w-32 md:h-40 bg-gray-300 rounded aspect-[3/4]"
+          >
+            <img
+              src="/thumbnail.jpg"
+              class="w-full h-full object-cover rounded"
+              alt="Movie Thumbnail"
+            />
+          </div>
+
+          <!-- Title and Watch Now Button (Flexbox Layout) -->
+          <div
+            class="absolute bottom-4 left-24 md:left-44 text-white flex flex-row sm:space-x-4"
+          >
+            <!-- Movie Title and Year -->
+            <div class="flex flex-col items-start">
+              <h1 class="md:text-2xl text-lg font-semibold">Movie Title</h1>
+              <h2 class="md:text-xl text-sm">2024</h2>
+            </div>
+
+            <!-- Watch Now Button -->
+            <a
+              href="./moviedetails.html"
+              class="flex flex-col items-start ml-5"
+            >
+              <button
+                class="px-4 py-2 bg-blue-600 text-white text-xs border-transparent border-[3px] hover:border-yellow-300 hover:text-yellow-300 font-bold p-1 rounded-md hover:bg-gradient-to-t from-blue-700 to-blue-400"
+              >
+                Watch Now
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid-cols-1 lg:flex gap-6">
+        <div class="w-full lg:w-2/3">
+          <h3 class="text-2xl font-semibold mb-4">Movie Description</h3>
+          <p class="text-lg text-gray-800">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis
+            efficitur enim. Aenean lacinia risus scelerisque eros convallis
+            euismod. Suspendisse vitae scelerisque ipsum. Aliquam pulvinar, nunc
+            a auctor sagittis, lorem sem semper orci, sodales pulvinar libero
+            massa vel enim. Proin rutrum lectus eget rhoncus tempus. Fusce sed
+            urna vel felis tempor porttitor. Donec ac dignissim lectus. Donec
+            feugiat fermentum erat sit amet efficitur.
+          </p>
+        </div>
+
+        <div
+          class="w-full sm:w-2/3 md:justify-center lg:w-1/3 bg-gray-100 border border-gray-300 p-4 rounded-md"
+        >
+          <h3 class="text-xl font-semibold mb-4">Similar Titles</h3>
+          <div class="flex gap-4">
+            <!-- Similar Movie 1 -->
+            <a href="./moviedetails.html" class="w-1/3">
+              <div class="w-full bg-gray-300 rounded aspect-[3/4]">
+                <img
+                  src="/thumbnail1.jpg"
+                  alt="Similar Movie 1"
+                  class="w-full h-full object-cover rounded"
+                />
+              </div>
+            </a>
+
+            <!-- Similar Movie 2 -->
+            <a href="./moviedetails.html" class="w-1/3">
+              <div class="w-full aspect-[3/4] bg-gray-300 rounded-md">
+                <img
+                  src="/thumbnail2.jpg"
+                  alt="Similar Movie 2"
+                  class="w-full h-full object-cover rounded-md"
+                />
+              </div>
+            </a>
+
+            <!-- Similar Movie 3 -->
+            <a href="./moviedetails.html" class="w-1/3">
+              <div class="w-full aspect-[3/4] bg-gray-300 rounded-md">
+                <img
+                  src="/thumbnail3.jpg"
+                  alt="Similar Movie 3"
+                  class="w-full h-full object-cover rounded-md"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bottom-0 mt-4 bg-gray-800 text-gray-300 text-sm py-4">
+      <div class="container mx-auto flex justify-between">
+        <a href="/about.html" class="mx-2 text-xs md:text-sm">About us</a>
+        <p class="mx-2 text-xs md:text-sm">
+          Copyright Blockbuster 2024. All Rights Reserved
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

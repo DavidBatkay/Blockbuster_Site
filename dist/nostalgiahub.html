@@ -66,65 +66,75 @@
       </div>
     </header>
 
-    <main class="container mx-auto mt-8 px-6">
-      <section class="container mx-auto px-4 md:px-8 lg:px-16 py-8 space-y-12">
-        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-          <div
-            class="bg-gray-200 max-sm:object-contain flex aspect-[4/3] items-center justify-center rounded"
-          ></div>
-          <div>
-            <h2 class="text-lg md:text-xl font-bold mb-4">
-              Our Blockbuster Story
-            </h2>
-            <p class="text-gray-700 text-xs sm:text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis
-              efficitur enim. Aenean lacinia risus scelerisque eros convallis
-              euismod. Suspendisse vitae scelerisque ipsum. Aliquam pulvinar,
-              nunc a auctor sagittis, lorem sem semper orci, sodales pulvinar
-              libero massa vel enim. Proin rutrum lectus eget rhoncus tempus.
-              Fusce sed urna vel felis tempor porttitor. Donec ac dignissim
-              lectus. Donec feugiat fermentum erat sit amet efficitur. Etiam
-              venenatis sapien vitae velit auctor gravida. Nunc nec condimentum
-              elit. Interdum et malesuada fames ac ante ipsum primis in
-              faucibus. Ut vel quam felis. Quisque ac felis metus. Phasellus ac
-              massa ut lorem tincidunt mattis vel tincidunt justo. Proin tempus,
-              eros at pharetra cursus, justo massa tincidunt diam, sit amet
-              malesuada velit eros at sem. Praesent non ipsum tortor. Curabitur
-              quis augue et libero volutpat vehicula vel in ex. Mauris sed
-              lectus at nulla finibus aliquam. Integer nisl quam, pretium
-              aliquam ex id, cursus suscipit magna. Sed malesuada neque
-              dignissim, hendrerit turpis blandit, commodo augue.
-            </p>
+    <main class="container mx-auto flex-grow mt-8 px-6">
+      <section class="container mx-auto px-6 my-8">
+        <!-- Title and Subtitle -->
+        <div class="text-center mb-8">
+          <h1 class="text-xl md:text-4xl font-bold text-gray-800">
+            Feeling Nostalgic?
+          </h1>
+          <p class="text-base text-gray-600 mt-2">
+            Relive the classics from the golden years!
+          </p>
+        </div>
+
+        <!-- Question -->
+        <div class="text-center mb-6">
+          <p class="text-xs md:text-xl text-gray-700">
+            How far in the past do you want to go?
+          </p>
+        </div>
+
+        <!-- Tab Select -->
+        <div
+          class="border-[3px] bg-gradient-to-t xl:font-bold from-blue-700 to-blue-400 text-yellow-300 border-yellow-300 bg-blue-600 rounded-md max-w-md mx-auto p-4"
+        >
+          <div class="flex justify-around">
+            <button
+              class="px-4 py-2 bg-inherit text-white rounded-md hover:bg-blue-950 hover:text-yellow-300 focus:ring focus:ring-blue-300"
+            >
+              10 Years
+            </button>
+            <button
+              class="px-4 py-2 bg-inherit text-white rounded-md hover:bg-blue-950 hover:text-yellow-300 focus:ring focus:ring-blue-300"
+            >
+              20 Years
+            </button>
+            <button
+              class="px-4 py-2 bg-inherit text-white rounded-md hover:bg-blue-950 hover:text-yellow-300 focus:ring focus:ring-blue-300"
+            >
+              30+ Years
+            </button>
           </div>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
-          <div
-            class="bg-gray-200 max-sm:object-contain flex aspect-[4/3] items-center justify-center rounded order-first md:order-last"
-          ></div>
-          <div>
-            <h2 class="text-lg md:text-xl font-bold mb-4">What now?</h2>
-            <p class="text-gray-700 text-xs sm:text-sm">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis
-              efficitur enim. Aenean lacinia risus scelerisque eros convallis
-              euismod. Suspendisse vitae scelerisque ipsum. Aliquam pulvinar,
-              nunc a auctor sagittis, lorem sem semper orci, sodales pulvinar
-              libero massa vel enim. Proin rutrum lectus eget rhoncus tempus.
-              Fusce sed urna vel felis tempor porttitor. Donec ac dignissim
-              lectus. Donec feugiat fermentum erat sit amet efficitur. Etiam
-              venenatis sapien vitae velit auctor gravida. Nunc nec condimentum
-              elit. Interdum et malesuada fames ac ante ipsum primis in
-              faucibus. Ut vel quam felis. Quisque ac felis metus. Phasellus ac
-              massa ut lorem tincidunt mattis vel tincidunt justo. Proin tempus,
-              eros at pharetra cursus, justo massa tincidunt diam, sit amet
-              malesuada velit eros at sem. Praesent non ipsum tortor. Curabitur
-              quis augue et libero volutpat vehicula vel in ex. Mauris sed
-              lectus at nulla finibus aliquam. Integer nisl quam, pretium
-              aliquam ex id, cursus suscipit magna. Sed malesuada neque
-              dignissim, hendrerit turpis blandit, commodo augue.
-            </p>
-          </div>
-        </div>
+        <!-- Movie Thumbnails Grid -->
+        <section
+          class="mt-6 mx-4 md:mx-12 lg:mx-48 grid grid-cols-3 lg:grid-cols-5 gap-4"
+        >
+          <a href="./moviedetails.html">
+            <div class="bg-gray-300 rounded aspect-[3/4]"></div>
+          </a>
+          <a href="./moviedetails.html">
+            <div class="bg-gray-300 rounded aspect-[3/4]"></div> </a
+          ><a href="./moviedetails.html">
+            <div class="bg-gray-300 rounded aspect-[3/4]"></div> </a
+          ><a href="./moviedetails.html">
+            <div class="bg-gray-300 rounded aspect-[3/4]"></div> </a
+          ><a href="./moviedetails.html">
+            <div class="bg-gray-300 rounded aspect-[3/4]"></div> </a
+          ><a href="./moviedetails.html">
+            <div class="bg-gray-300 rounded aspect-[3/4]"></div> </a
+          ><a href="./moviedetails.html">
+            <div class="bg-gray-300 rounded aspect-[3/4]"></div> </a
+          ><a href="./moviedetails.html">
+            <div class="bg-gray-300 rounded aspect-[3/4]"></div> </a
+          ><a href="./moviedetails.html">
+            <div class="bg-gray-300 rounded aspect-[3/4]"></div> </a
+          ><a href="./moviedetails.html">
+            <div class="bg-gray-300 rounded aspect-[3/4]"></div>
+          </a>
+        </section>
       </section>
     </main>
 
